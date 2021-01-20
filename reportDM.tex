@@ -1,0 +1,58 @@
+\documentclass[a4paper, 10.5pt]{article}
+
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}
+\usepackage{siunitx}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{amsfonts}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+\sisetup{round-mode = places, round-precision = 2, table-parse-only}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=2.7cm, right=2.7cm}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\captionsetup{labelfont=bf, justification=centering}
+\sisetup{round-mode = figures,round-precision = 3}
+\includeonly{DataUnderstanding, clustering, AssociationRules, Classification, Conclusioni}
+
+
+\begin{document}
+    \begin{titlepage}
+
+        \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+        \center % Center everything on the page
+        
+        \includegraphics[width = 0.25\textwidth]{prima_pg/unipi.png}\\
+        \hspace*{\fill}
+        
+        \textsc{\LARGE Università di Pisa}\\[1.5cm] %
+        \textsc{\Large }\\[0.5cm] 
+        \textsc{\LARGE \textit {Data Mining project}}\\[0.8cm]
+        \HRule \\[0.8cm]
+        { \huge \bfseries Perché i lavoratori lasciano un'azienda?}\\[0.4cm]
+        \LARGE\textbf{ Il caso IBM}
+        
+        \HRule \\[1.5cm]
+        \textsc{\Large\textit{{A cura di\\Erica Cau, Alfonso Ferraro, Simona Mazzarino, Federico Mazzoni}}}
+  
+%----------------------------------------------------------------------------------------
+
+    \end{titlepage}
+    
+    \include{DataUnderstanding}
+    
+    \include{clustering}
+    \include{Classification}
+    \include{AssociationRules}
+    \include{Conclusioni}
+    
+\end{document}
